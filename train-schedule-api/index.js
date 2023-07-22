@@ -3,43 +3,9 @@ const axios = require('axios');
 const bodyParser = require('body-parser');
 
 const app = express();
-// port = 3000;
 app.use(express.json());
 app.use(bodyParser.json());
 
-
-// app.get('/', (req, res) => { res.send('API is running'); });
-// app.listen(port, () => { console.log(`Server is running on port ${port}`); });
-
-//  app.post('/register', async (req, res) => {
-//      try {
-//        // Get the registration data from the request body
-//        const { companyName, ownerName, rollNo, ownerEmail, accessCode } = req.body;
-
-//        // Make a POST request to the John Doe Railway Server
-//        const response = await axios.post('http://20.244.56.144/train/register', {
-//          companyName,
-//          ownerName,
-//          rollNo,
-//          ownerEmail,
-//          accessCode
-//        });
-
-//        // Extract the registration details from the response
-//        const { clientID, clientSecret } = response.data;
-
-//        // Return the registration details in the response
-//        res.status(200).json({
-//          companyName,
-//          clientID,
-//          clientSecret
-//        });
-//      } catch (error) {
-//        // Handle any errors that occur during registration
-//        console.error('Error during registration:', error);
-//        res.status(500).json({ error: 'Failed to register company' });
-//      }
-//    });
 
 const johnDoeRailwayURL = 'http://20.244.56.144/train';
 const clientID = '364a0d9f-109b-44c2-b1ca-7e0ff3911158';
